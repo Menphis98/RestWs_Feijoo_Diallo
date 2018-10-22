@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class SayHello {
 
     @RequestMapping("/hola")
-    public String sayhello() {
-        return("Hola Mundo");
+    public int sayhello() {
+        int a=12;
+        int b=13;
+        int suma= a+b;
+
+
+        return(suma);
     }
 }

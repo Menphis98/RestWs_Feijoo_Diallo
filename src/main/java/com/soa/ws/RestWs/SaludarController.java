@@ -15,6 +15,7 @@ public class SaludarController {
         @RequestMapping("/saludar")
         public Saludar saludar(@RequestParam(value="nombre",defaultValue="Mundo") String nombre) {
             Saludar saludo;
+
             saludo = new Saludar(cant.incrementAndGet(), String.format(template,nombre));
             return saludo;
         }
